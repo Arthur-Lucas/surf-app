@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,25 +14,32 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { ROUTES } from "@/utils/constants/ROUTES";
+import { signIn } from "@/services/authService";
 
 export function LoginForm({
   className,
-  onLogin, // Nouvelle prop
   ...props
-}: React.ComponentPropsWithoutRef<"div"> & {
-  onLogin?: (email: string, password: string) => void;
-}) {
+}: React.ComponentPropsWithoutRef<"div">) {
+  const [errorMessage, setErrorMessage] = useState("");
+
   function handleSubmit(event: React.FormEvent) {
-    event.preventDefault(); // Empêcher le refresh de la page
+    event.preventDefault();
 
     const form = event.currentTarget as HTMLFormElement;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const password = (form.elements.namedItem("password") as HTMLInputElement)
       .value;
 
-    if (onLogin) {
-      onLogin(email, password); // Lever l'event avec les valeurs du form
-    }
+    setErrorMessage(""); // Réinitialiser l'erreur avant la tentative
+
+    signIn(email, password)
+      .then((data) => {
+        console.log("User signed in:", data);
+      })
+      .catch((error) => {
+        console.error("Error signing in:", error);
+        setErrorMessage("Invalid email or password. Please try again.");
+      });
   }
 
   return (
@@ -39,9 +47,6 @@ export function LoginForm({
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
-          <CardDescription>
-            Enter your email below to login to your account
-          </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit}>
@@ -67,7 +72,11 @@ export function LoginForm({
                   </a>
                 </div>
                 <Input id="password" name="password" type="password" required />
+                {errorMessage && (
+                  <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
               </div>
+
               <Button type="submit" className="w-full cursor-pointer">
                 Login
               </Button>

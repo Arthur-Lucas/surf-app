@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,20 +12,16 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { signUp } from "@/services/authService";
 
 export function RegisterForm({
   className,
-  onRegister,
   ...props
-}: React.ComponentPropsWithoutRef<"div"> & {
-  onRegister?: (
-    email: string,
-    password: string,
-    confirmPassword: string
-  ) => void;
-}) {
+}: React.ComponentPropsWithoutRef<"div">) {
+  const [errorMessage, setErrorMessage] = useState("");
+
   function handleSubmit(event: React.FormEvent) {
-    event.preventDefault(); // Empêcher le refresh de la page
+    event.preventDefault();
 
     const form = event.currentTarget as HTMLFormElement;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
@@ -34,9 +31,24 @@ export function RegisterForm({
       form.elements.namedItem("confirmPassword") as HTMLInputElement
     ).value;
 
-    if (onRegister) {
-      onRegister(email, password, confirmPassword); // Lever l'event avec les valeurs du form
+    setErrorMessage(""); // Réinitialiser les erreurs
+
+    // Vérifier si les mots de passe correspondent
+    if (password !== confirmPassword) {
+      setErrorMessage("Passwords do not match.");
+      return;
     }
+
+    signUp(email, password)
+      .then((data) => {
+        console.log("User signed up:", data);
+      })
+      .catch((error) => {
+        console.error("Error signing up:", error);
+        setErrorMessage(
+          "An error occurred while signing up. Please try again."
+        );
+      });
   }
 
   return (
@@ -45,7 +57,7 @@ export function RegisterForm({
         <CardHeader>
           <CardTitle className="text-2xl">Register</CardTitle>
           <CardDescription>
-            Enter your credits below to register your account
+            Enter your credentials below to register your account
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -55,24 +67,30 @@ export function RegisterForm({
                 <Label htmlFor="email">Email</Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="m@example.com"
                   required
                 />
               </div>
               <div className="grid gap-2">
-                <div className="flex items-center">
-                  <Label htmlFor="password">Password</Label>
-                </div>
-                <Input id="password" type="password" required />
+                <Label htmlFor="password">Password</Label>
+                <Input id="password" name="password" type="password" required />
               </div>
               <div className="grid gap-2">
-                <div className="flex items-center">
-                  <Label htmlFor="confirmPassword">Confirm Password</Label>
-                </div>
-                <Input id="confirmPassword" type="password" required />
+                <Label htmlFor="confirmPassword">Confirm Password</Label>
+                <Input
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  type="password"
+                  required
+                />
+                {errorMessage && (
+                  <p className="text-red-500 text-sm ">{errorMessage}</p>
+                )}
               </div>
-              <Button type="submit" className="w-full">
+
+              <Button type="submit" className="w-full cursor-pointer">
                 Register
               </Button>
             </div>
