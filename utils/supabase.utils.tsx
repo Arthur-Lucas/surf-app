@@ -27,3 +27,27 @@ export async function createClient() {
     }
   );
 }
+
+export const login = async (email: string, password: string) => {
+  const supabase = await createClient();
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  });
+};
+
+async function signUpNewUser(email: string, password: string) {
+  const supabase = await createClient();
+  const { data, error } = await supabase.auth.signUp({
+    email: email,
+    password: password,
+    options: {
+      emailRedirectTo: "https://example.com/welcome",
+    },
+  });
+}
+
+async function signOut() {
+  const supabase = await createClient();
+  const { error } = await supabase.auth.signOut();
+}
