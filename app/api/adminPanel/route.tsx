@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     const { name, location, waveType, difficulty, description, lat, lng } =
       body;
     console.log("Received data:", body);
-    let spot: Spot = {
+    const spot: Spot = {
       id: "",
       name,
       location,
