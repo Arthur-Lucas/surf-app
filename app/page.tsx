@@ -16,7 +16,6 @@ export default function Home() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Session data:", data);
         if (data.user) {
           setUser(data.user);
         }
