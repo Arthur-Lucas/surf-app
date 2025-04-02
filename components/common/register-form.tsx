@@ -54,9 +54,12 @@ export function RegisterForm({
       }
 
       setSuccessMessage("Registration successful! You can now log in.");
-    } catch (error: any) {
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        setErrorMessage(error.message);
+      }
+
       console.error("Error signing up:", error);
-      setErrorMessage(error.message);
     }
   }
 
