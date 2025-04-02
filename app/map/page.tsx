@@ -7,18 +7,19 @@ import spots from "../datas/spots_with_real_coords.json";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 let L: typeof import("leaflet");
-if (typeof window !== "undefined") {
-  import("leaflet").then((leaflet) => {
-    L = leaflet;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    delete (L.Icon.Default.prototype as any)._getIconUrl;
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: "/leaflet/marker-icon-2x.png",
-      iconUrl: "/leaflet/marker-icon.png",
-      shadowUrl: "/leaflet/marker-shadow.png",
+useEffect(() => {
+  if (typeof window !== "undefined") {
+    import("leaflet").then((L) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      delete (L.Icon.Default.prototype as any)._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: "/leaflet/marker-icon-2x.png",
+        iconUrl: "/leaflet/marker-icon.png",
+        shadowUrl: "/leaflet/marker-shadow.png",
+      });
     });
-  });
-}
+  }
+}, []);
 
 interface Spot {
   id: string;
