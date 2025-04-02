@@ -36,15 +36,12 @@ export default function Home() {
         if (response.ok) {
           setUser(null);
           console.log("Successfully signed out");
+
         } else {
-          console.error("Failed to sign out");
         }
       })
-      .catch((error) => {
-        console.error("Error during sign out:", error);
-      });
+      .catch(() => {});
   }
-
   return (
     <div className="flex flex-col min-h-screen bg-white text-black">
       <nav className="w-full bg-white border-b border-gray-200 p-4 flex justify-between items-center fixed top-0 z-50">
