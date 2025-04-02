@@ -27,7 +27,7 @@ export async function POST(request: Request) {
       });
 
     return NextResponse.json(
-      { message: "Function called successfully" },
+      { message: "Spot added successfully" },
       { status: 200 }
     );
   } catch (error) {
