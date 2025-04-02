@@ -1,7 +1,7 @@
 "use client";
 
 import "leaflet/dist/leaflet.css";
-import { useEffect, useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import spots from "../datas/spots_with_real_coords.json";
 import dynamic from "next/dynamic";
@@ -26,6 +26,7 @@ let L: typeof import("leaflet") | null = null;
 if (typeof window !== "undefined") {
   import("leaflet").then((leaflet) => {
     L = leaflet;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     delete (L.Icon.Default.prototype as any)._getIconUrl;
     L.Icon.Default.mergeOptions({
       iconRetinaUrl: "/leaflet/marker-icon-2x.png",
