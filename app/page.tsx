@@ -16,6 +16,7 @@ export default function Home() {
     })
       .then((response) => response.json())
       .then((data) => {
+        console.log("Session data:", data);
         if (data.user) {
           setUser(data.user);
         }
@@ -47,13 +48,7 @@ export default function Home() {
         <h1 className="text-2xl font-bold">SurfSpots</h1>
         <div className="flex gap-4">
           {user ? (
-            <Button
-              className="hover:cursor-pointer"
-              variant="default"
-              onClick={handleSignOut}
-            >
-              Logout
-            </Button>
+            <></>
           ) : (
             <>
               <Link className="hover:cursor-pointer" href="/login">
