@@ -1,10 +1,9 @@
 import { ROUTES } from "@/utils/constants/ROUTES";
 import { createClient, getURL } from "@/utils/supabase.utils";
 
-const supabase = createClient();
-
 export const signUp = async (email: string, password: string) => {
   try {
+    const supabase = await createClient();
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -19,6 +18,7 @@ export const signUp = async (email: string, password: string) => {
 
 export const signIn = async (email: string, password: string) => {
   try {
+    const supabase = await createClient();
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
@@ -33,6 +33,7 @@ export const signIn = async (email: string, password: string) => {
 
 export const signOut = async () => {
   try {
+    const supabase = await createClient();
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
     return true;
@@ -44,6 +45,7 @@ export const signOut = async () => {
 
 export const getUser = async () => {
   try {
+    const supabase = await createClient();
     const { data: user } = await supabase.auth.getUser();
     return user;
   } catch (err) {

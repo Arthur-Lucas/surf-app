@@ -12,15 +12,15 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { signUp } from "@/services/authService";
 
 export function RegisterForm({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
 
     const form = event.currentTarget as HTMLFormElement;
@@ -32,6 +32,7 @@ export function RegisterForm({
     ).value;
 
     setErrorMessage(""); // Réinitialiser les erreurs
+    setSuccessMessage(""); // Réinitialiser le message de succès
 
     // Vérifier si les mots de passe correspondent
     if (password !== confirmPassword) {
@@ -39,16 +40,24 @@ export function RegisterForm({
       return;
     }
 
-    signUp(email, password)
-      .then((data) => {
-        console.log("User signed up:", data);
-      })
-      .catch((error) => {
-        console.error("Error signing up:", error);
-        setErrorMessage(
-          "An error occurred while signing up. Please try again."
-        );
+    try {
+      const response = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
       });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "An error occurred while signing up.");
+      }
+
+      setSuccessMessage("Registration successful! You can now log in.");
+    } catch (error: any) {
+      console.error("Error signing up:", error);
+      setErrorMessage(error.message);
+    }
   }
 
   return (
@@ -85,10 +94,14 @@ export function RegisterForm({
                   type="password"
                   required
                 />
-                {errorMessage && (
-                  <p className="text-red-500 text-sm ">{errorMessage}</p>
-                )}
               </div>
+
+              {errorMessage && (
+                <p className="text-red-500 text-sm">{errorMessage}</p>
+              )}
+              {successMessage && (
+                <p className="text-green-500 text-sm">{successMessage}</p>
+              )}
 
               <Button type="submit" className="w-full cursor-pointer">
                 Register

@@ -1,25 +1,42 @@
 "use client";
-import { getUser, signOut } from "@/services/authService";
+// import { getUser, signOut } from "@/services/authService";
 import Image from "next/image";
 
 export default function Home() {
   function handleSignOut() {
-    signOut()
-      .then(() => {
-        console.log("User signed out successfully.");
+    fetch("/api/auth/signout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log("Successfully signed out");
+          // Optionally, redirect or update UI
+        } else {
+          console.error("Failed to sign out");
+        }
       })
       .catch((error) => {
-        console.error("Error signing out:", error);
+        console.error("Error during sign out:", error);
       });
   }
 
   function handleGetSession() {
-    getUser()
-      .then((user) => {
-        console.log("User session:", user);
+    fetch("/api/auth/session", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Session data:", data);
+        // Optionally, handle the session data
       })
       .catch((error) => {
-        console.error("Error fetching user session:", error);
+        console.error("Error fetching session:", error);
       });
   }
   return (

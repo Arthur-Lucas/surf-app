@@ -14,7 +14,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { ROUTES } from "@/utils/constants/ROUTES";
-import { signIn } from "@/services/authService";
 
 export function LoginForm({
   className,
@@ -22,7 +21,7 @@ export function LoginForm({
 }: React.ComponentPropsWithoutRef<"div">) {
   const [errorMessage, setErrorMessage] = useState("");
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
 
     const form = event.currentTarget as HTMLFormElement;
@@ -32,14 +31,23 @@ export function LoginForm({
 
     setErrorMessage(""); // Réinitialiser l'erreur avant la tentative
 
-    signIn(email, password)
-      .then((data) => {
-        console.log("User signed in:", data);
-      })
-      .catch((error) => {
-        console.error("Error signing in:", error);
-        setErrorMessage("Invalid email or password. Please try again.");
+    try {
+      const response = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
       });
+
+      if (!response.ok) {
+        throw new Error("Invalid email or password");
+      }
+
+      const data = await response.json();
+      console.log("User signed in:", data);
+    } catch (error) {
+      console.error("Error signing in:", error);
+      setErrorMessage("Invalid email or password. Please try again.");
+    }
   }
 
   return (
