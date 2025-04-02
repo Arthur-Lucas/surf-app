@@ -13,44 +13,7 @@ import {
 } from "recharts";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import spots from "../../datas/spots.json";
-
-interface SurfStats {
-  wind: string;
-  tide: string;
-  swellHeight: string;
-  swellDirection: string;
-  swellPeriod: string;
-  waterTemp: string;
-  airTemp: string;
-  rating: number;
-}
-
-interface HourlyData {
-  hour: string;
-  swell: number;
-  wind: number;
-  tide: number;
-}
-
-interface DailyData {
-  day: string;
-  swell: number;
-  wind: number;
-  tide: number;
-}
-
-interface Spot {
-  id: string;
-  name: string;
-  location: string;
-  waveType: string;
-  difficulty: string;
-  description: string;
-  stats: SurfStats;
-  forecast: HourlyData[];
-  dailyForecast: DailyData[];
-}
+import spots from "@/public/datas/spots.json";
 
 export default function SingleSpot() {
   const { id } = useParams();
