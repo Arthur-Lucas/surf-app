@@ -1,5 +1,4 @@
-import { ROUTES } from "@/utils/constants/ROUTES";
-import { createClient, getURL } from "@/utils/supabase.utils";
+import { createClient } from "@/utils/supabase.utils";
 
 export const signUp = async (email: string, password: string) => {
   try {
@@ -11,7 +10,6 @@ export const signUp = async (email: string, password: string) => {
     if (error) throw error;
     return data;
   } catch (err) {
-    console.error("Error signing up:", err);
     throw err;
   }
 };
@@ -26,7 +24,6 @@ export const signIn = async (email: string, password: string) => {
     if (error) throw error;
     return data;
   } catch (err) {
-    console.error("Error signing in:", err);
     throw err;
   }
 };
@@ -38,7 +35,6 @@ export const signOut = async () => {
     if (error) throw error;
     return true;
   } catch (err) {
-    console.error("Error signing out:", err);
     throw err;
   }
 };
@@ -49,7 +45,6 @@ export const getUser = async () => {
     const { data: user } = await supabase.auth.getUser();
     return user;
   } catch (err) {
-    console.error("Error fetching user:", err);
     throw err;
   }
 };

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -25,6 +26,7 @@
     "react-leaflet": "^5.0.0",
     "recharts": "^2.15.1",
     "tailwind-merge": "^3.1.0",
+    "ts-jest": "^29.3.1",
     "tw-animate-css": "^1.2.5",
     "zod": "^3.24.2"
   },

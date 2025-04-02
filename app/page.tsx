@@ -12,15 +12,11 @@ export default function Home() {
     })
       .then((response) => {
         if (response.ok) {
-          console.log("Successfully signed out");
           // Optionally, redirect or update UI
         } else {
-          console.error("Failed to sign out");
         }
       })
-      .catch((error) => {
-        console.error("Error during sign out:", error);
-      });
+      .catch((error) => {});
   }
 
   function handleGetSession() {
@@ -31,10 +27,7 @@ export default function Home() {
       },
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log("Session data:", data);
-        // Optionally, handle the session data
-      })
+      .then((data) => {})
       .catch((error) => {
         console.error("Error fetching session:", error);
       });
