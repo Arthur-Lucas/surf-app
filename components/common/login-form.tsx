@@ -8,8 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { ROUTES } from "@/utils/constants/ROUTES";
-import { useRouter } from 'next/navigation';
-
+import { useRouter } from "next/navigation";
 
 export function LoginForm({
   className,
@@ -39,9 +38,7 @@ export function LoginForm({
         throw new Error("Invalid email or password");
       }
 
-      const data = await response.json();
-      router.push('/spotList');
-
+      router.push("/spotList");
     } catch (error) {
       console.error("Error signing in:", error);
       setErrorMessage("Invalid email or password. Please try again.");
