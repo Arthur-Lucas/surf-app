@@ -3,7 +3,7 @@
 import "leaflet/dist/leaflet.css";
 import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import spots from "../datas/spots_with_real_coords.json";
+import spots from "@/public/datas/spots_with_real_coords.json";
 import dynamic from "next/dynamic";
 
 const MapContainer = dynamic(
@@ -34,15 +34,6 @@ if (typeof window !== "undefined") {
       shadowUrl: "/leaflet/marker-shadow.png",
     });
   });
-}
-
-interface Spot {
-  id: string;
-  name: string;
-  location: string;
-  coordinates: number[];
-  waveType: string;
-  difficulty: string;
 }
 
 export default function MapPage() {

@@ -13,44 +13,7 @@ import {
 } from "recharts";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import spots from "../../datas/spots.json";
-
-interface SurfStats {
-  wind: string;
-  tide: string;
-  swellHeight: string;
-  swellDirection: string;
-  swellPeriod: string;
-  waterTemp: string;
-  airTemp: string;
-  rating: number;
-}
-
-interface HourlyData {
-  hour: string;
-  swell: number;
-  wind: number;
-  tide: number;
-}
-
-interface DailyData {
-  day: string;
-  swell: number;
-  wind: number;
-  tide: number;
-}
-
-interface Spot {
-  id: string;
-  name: string;
-  location: string;
-  waveType: string;
-  difficulty: string;
-  description: string;
-  stats: SurfStats;
-  forecast: HourlyData[];
-  dailyForecast: DailyData[];
-}
+import spots from "@/public/datas/spots.json";
 
 export default function SingleSpot() {
   const { id } = useParams();
@@ -91,20 +54,20 @@ export default function SingleSpot() {
 
         <Card className="border border-gray-200 rounded-xl bg-white">
           <CardContent className="p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
-            <SurfStat label="Vent" value={spot.stats.wind} />
-            <SurfStat label="Marée" value={spot.stats.tide} />
-            <SurfStat label="Houle" value={spot.stats.swellHeight} />
+            <SurfStat label="Vent" value={spot.stats!.wind} />
+            <SurfStat label="Marée" value={spot.stats!.tide} />
+            <SurfStat label="Houle" value={spot.stats!.swellHeight} />
             <SurfStat
               label="Direction Houle"
-              value={spot.stats.swellDirection}
+              value={spot.stats!.swellDirection}
             />
-            <SurfStat label="Période" value={spot.stats.swellPeriod} />
-            <SurfStat label="Temp. Eau" value={spot.stats.waterTemp} />
-            <SurfStat label="Temp. Air" value={spot.stats.airTemp} />
+            <SurfStat label="Période" value={spot.stats!.swellPeriod} />
+            <SurfStat label="Temp. Eau" value={spot.stats!.waterTemp} />
+            <SurfStat label="Temp. Air" value={spot.stats!.airTemp} />
             <SurfStat
               label="Note"
-              value={`${"★".repeat(spot.stats.rating)}${"☆".repeat(
-                5 - spot.stats.rating
+              value={`${"★".repeat(spot.stats!.rating)}${"☆".repeat(
+                5 - spot.stats!.rating
               )}`}
             />
           </CardContent>
@@ -159,7 +122,7 @@ export default function SingleSpot() {
         <div className="space-y-4">
           <h3 className="text-2xl font-bold">Prévisions sur 7 jours</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {spot.dailyForecast.map((day, index) => (
+            {spot.dailyForecast!.map((day, index) => (
               <Card key={index} className="border border-gray-200">
                 <CardContent className="p-4 text-sm space-y-1">
                   <div className="font-semibold">{day.day}</div>
