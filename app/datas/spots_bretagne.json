@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "1",
+    "name": "La Torche",
+    "location": "Finistère, Bretagne",
+    "coordinates": [
+      47.847,
+      -4.367
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Débutant",
+    "description": "La Torche est un spot de surf réputé en Finistère, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Onshore - 18km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.2m",
+      "swellDirection": "Nord-Ouest (295°)",
+      "swellPeriod": "11s",
+      "waterTemp": "13°C",
+      "airTemp": "17°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.1,
+        "wind": 9,
+        "tide": 1.7
+      },
+      {
+        "hour": "09h",
+        "swell": 2.0,
+        "wind": 19,
+        "tide": 1.4
+      },
+      {
+        "hour": "12h",
+        "swell": 1.1,
+        "wind": 13,
+        "tide": 1.1
+      },
+      {
+        "hour": "15h",
+        "swell": 2.2,
+        "wind": 8,
+        "tide": 1.6
+      },
+      {
+        "hour": "18h",
+        "swell": 1.8,
+        "wind": 8,
+        "tide": 1.7
+      },
+      {
+        "hour": "21h",
+        "swell": 2.6,
+        "wind": 9,
+        "tide": 1.3
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 2.1,
+        "wind": 13,
+        "tide": 1.0
+      },
+      {
+        "day": "Mardi",
+        "swell": 1.5,
+        "wind": 13,
+        "tide": 0.5
+      },
+      {
+        "day": "Mercredi",
+        "swell": 2.1,
+        "wind": 11,
+        "tide": 0.6
+      },
+      {
+        "day": "Jeudi",
+        "swell": 1.5,
+        "wind": 15,
+        "tide": 1.7
+      },
+      {
+        "day": "Vendredi",
+        "swell": 2.5,
+        "wind": 14,
+        "tide": 2.0
+      },
+      {
+        "day": "Samedi",
+        "swell": 1.2,
+        "wind": 17,
+        "tide": 2.5
+      },
+      {
+        "day": "Dimanche",
+        "swell": 1.5,
+        "wind": 15,
+        "tide": 2.4
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Saint-Pierre-Quiberon",
+    "location": "Morbihan, Bretagne",
+    "coordinates": [
+      47.515,
+      -3.14
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Intermédiaire",
+    "description": "Saint-Pierre-Quiberon est un spot de surf réputé en Morbihan, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Onshore - 15km/h",
+      "tide": "Descendante",
+      "swellHeight": "1.2m",
+      "swellDirection": "Sud-Ouest (269°)",
+      "swellPeriod": "14s",
+      "waterTemp": "14°C",
+      "airTemp": "20°C",
+      "rating": 1
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.6,
+        "wind": 16,
+        "tide": 1.0
+      },
+      {
+        "hour": "09h",
+        "swell": 1.8,
+        "wind": 20,
+        "tide": 0.7
+      },
+      {
+        "hour": "12h",
+        "swell": 2.6,
+        "wind": 15,
+        "tide": 1.0
+      },
+      {
+        "hour": "15h",
+        "swell": 1.3,
+        "wind": 18,
+        "tide": 1.6
+      },
+      {
+        "hour": "18h",
+        "swell": 2.8,
+        "wind": 17,
+        "tide": 1.2
+      },
+      {
+        "hour": "21h",
+        "swell": 2.7,
+        "wind": 15,
+        "tide": 1.0
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 1.6,
+        "wind": 15,
+        "tide": 0.8
+      },
+      {
+        "day": "Mardi",
+        "swell": 1.2,
+        "wind": 17,
+        "tide": 0.9
+      },
+      {
+        "day": "Mercredi",
+        "swell": 2.4,
+        "wind": 7,
+        "tide": 1.4
+      },
+      {
+        "day": "Jeudi",
+        "swell": 3.3,
+        "wind": 14,
+        "tide": 1.3
+      },
+      {
+        "day": "Vendredi",
+        "swell": 2.0,
+        "wind": 14,
+        "tide": 1.5
+      },
+      {
+        "day": "Samedi",
+        "swell": 1.5,
+        "wind": 18,
+        "tide": 0.9
+      },
+      {
+        "day": "Dimanche",
+        "swell": 1.1,
+        "wind": 11,
+        "tide": 1.4
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Plouharnel",
+    "location": "Morbihan, Bretagne",
+    "coordinates": [
+      47.579,
+      -3.139
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Avancé",
+    "description": "Plouharnel est un spot de surf réputé en Morbihan, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Onshore - 10km/h",
+      "tide": "Montante",
+      "swellHeight": "3.2m",
+      "swellDirection": "Ouest (250°)",
+      "swellPeriod": "15s",
+      "waterTemp": "11°C",
+      "airTemp": "12°C",
+      "rating": 2
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.0,
+        "wind": 11,
+        "tide": 1.6
+      },
+      {
+        "hour": "09h",
+        "swell": 1.9,
+        "wind": 10,
+        "tide": 0.5
+      },
+      {
+        "hour": "12h",
+        "swell": 2.0,
+        "wind": 19,
+        "tide": 0.7
+      },
+      {
+        "hour": "15h",
+        "swell": 2.3,
+        "wind": 14,
+        "tide": 0.6
+      },
+      {
+        "hour": "18h",
+        "swell": 1.3,
+        "wind": 15,
+        "tide": 1.2
+      },
+      {
+        "hour": "21h",
+        "swell": 1.4,
+        "wind": 6,
+        "tide": 0.6
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 1.8,
+        "wind": 18,
+        "tide": 2.3
+      },
+      {
+        "day": "Mardi",
+        "swell": 3.4,
+        "wind": 11,
+        "tide": 1.6
+      },
+      {
+        "day": "Mercredi",
+        "swell": 2.6,
+        "wind": 11,
+        "tide": 1.9
+      },
+      {
+        "day": "Jeudi",
+        "swell": 2.2,
+        "wind": 17,
+        "tide": 1.2
+      },
+      {
+        "day": "Vendredi",
+        "swell": 1.7,
+        "wind": 5,
+        "tide": 1.2
+      },
+      {
+        "day": "Samedi",
+        "swell": 2.1,
+        "wind": 15,
+        "tide": 1.1
+      },
+      {
+        "day": "Dimanche",
+        "swell": 1.2,
+        "wind": 14,
+        "tide": 2.4
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Trestraou",
+    "location": "Côtes-d'Armor, Bretagne",
+    "coordinates": [
+      48.816,
+      -3.449
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Intermédiaire",
+    "description": "Trestraou est un spot de surf réputé en Côtes-d'Armor, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Onshore - 16km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.0m",
+      "swellDirection": "Ouest (228°)",
+      "swellPeriod": "8s",
+      "waterTemp": "14°C",
+      "airTemp": "16°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.4,
+        "wind": 20,
+        "tide": 1.7
+      },
+      {
+        "hour": "09h",
+        "swell": 2.5,
+        "wind": 8,
+        "tide": 0.6
+      },
+      {
+        "hour": "12h",
+        "swell": 2.4,
+        "wind": 7,
+        "tide": 1.7
+      },
+      {
+        "hour": "15h",
+        "swell": 2.0,
+        "wind": 20,
+        "tide": 1.1
+      },
+      {
+        "hour": "18h",
+        "swell": 2.7,
+        "wind": 8,
+        "tide": 1.3
+      },
+      {
+        "hour": "21h",
+        "swell": 1.5,
+        "wind": 15,
+        "tide": 0.7
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 1.9,
+        "wind": 16,
+        "tide": 2.2
+      },
+      {
+        "day": "Mardi",
+        "swell": 3.2,
+        "wind": 10,
+        "tide": 1.1
+      },
+      {
+        "day": "Mercredi",
+        "swell": 2.8,
+        "wind": 7,
+        "tide": 0.6
+      },
+      {
+        "day": "Jeudi",
+        "swell": 3.2,
+        "wind": 17,
+        "tide": 1.5
+      },
+      {
+        "day": "Vendredi",
+        "swell": 2.7,
+        "wind": 18,
+        "tide": 1.1
+      },
+      {
+        "day": "Samedi",
+        "swell": 2.0,
+        "wind": 11,
+        "tide": 1.5
+      },
+      {
+        "day": "Dimanche",
+        "swell": 1.9,
+        "wind": 10,
+        "tide": 1.0
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Guidel-Plages",
+    "location": "Morbihan, Bretagne",
+    "coordinates": [
+      47.757,
+      -3.487
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Intermédiaire",
+    "description": "Guidel-Plages est un spot de surf réputé en Morbihan, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Onshore - 15km/h",
+      "tide": "Montante",
+      "swellHeight": "2.9m",
+      "swellDirection": "Nord-Ouest (180°)",
+      "swellPeriod": "10s",
+      "waterTemp": "14°C",
+      "airTemp": "21°C",
+      "rating": 4
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.1,
+        "wind": 10,
+        "tide": 1.8
+      },
+      {
+        "hour": "09h",
+        "swell": 1.1,
+        "wind": 9,
+        "tide": 0.5
+      },
+      {
+        "hour": "12h",
+        "swell": 2.8,
+        "wind": 8,
+        "tide": 1.2
+      },
+      {
+        "hour": "15h",
+        "swell": 2.1,
+        "wind": 11,
+        "tide": 1.2
+      },
+      {
+        "hour": "18h",
+        "swell": 2.3,
+        "wind": 18,
+        "tide": 0.7
+      },
+      {
+        "hour": "21h",
+        "swell": 1.9,
+        "wind": 14,
+        "tide": 1.6
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 2.0,
+        "wind": 16,
+        "tide": 2.0
+      },
+      {
+        "day": "Mardi",
+        "swell": 2.9,
+        "wind": 10,
+        "tide": 0.8
+      },
+      {
+        "day": "Mercredi",
+        "swell": 1.0,
+        "wind": 16,
+        "tide": 0.8
+      },
+      {
+        "day": "Jeudi",
+        "swell": 1.1,
+        "wind": 6,
+        "tide": 2.5
+      },
+      {
+        "day": "Vendredi",
+        "swell": 3.3,
+        "wind": 5,
+        "tide": 2.0
+      },
+      {
+        "day": "Samedi",
+        "swell": 2.5,
+        "wind": 13,
+        "tide": 0.9
+      },
+      {
+        "day": "Dimanche",
+        "swell": 2.1,
+        "wind": 5,
+        "tide": 2.0
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Pors Carn",
+    "location": "Finistère, Bretagne",
+    "coordinates": [
+      47.841,
+      -4.373
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Débutant",
+    "description": "Pors Carn est un spot de surf réputé en Finistère, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Offshore - 12km/h",
+      "tide": "Descendante",
+      "swellHeight": "2.6m",
+      "swellDirection": "Sud-Ouest (209°)",
+      "swellPeriod": "8s",
+      "waterTemp": "12°C",
+      "airTemp": "16°C",
+      "rating": 5
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.8,
+        "wind": 7,
+        "tide": 1.8
+      },
+      {
+        "hour": "09h",
+        "swell": 1.3,
+        "wind": 19,
+        "tide": 1.9
+      },
+      {
+        "hour": "12h",
+        "swell": 2.6,
+        "wind": 19,
+        "tide": 1.2
+      },
+      {
+        "hour": "15h",
+        "swell": 1.3,
+        "wind": 11,
+        "tide": 1.0
+      },
+      {
+        "hour": "18h",
+        "swell": 2.8,
+        "wind": 16,
+        "tide": 1.3
+      },
+      {
+        "hour": "21h",
+        "swell": 1.1,
+        "wind": 16,
+        "tide": 1.2
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 1.9,
+        "wind": 7,
+        "tide": 2.3
+      },
+      {
+        "day": "Mardi",
+        "swell": 2.1,
+        "wind": 17,
+        "tide": 1.6
+      },
+      {
+        "day": "Mercredi",
+        "swell": 1.5,
+        "wind": 11,
+        "tide": 0.9
+      },
+      {
+        "day": "Jeudi",
+        "swell": 2.5,
+        "wind": 6,
+        "tide": 1.6
+      },
+      {
+        "day": "Vendredi",
+        "swell": 3.0,
+        "wind": 6,
+        "tide": 2.2
+      },
+      {
+        "day": "Samedi",
+        "swell": 1.6,
+        "wind": 11,
+        "tide": 1.9
+      },
+      {
+        "day": "Dimanche",
+        "swell": 3.3,
+        "wind": 7,
+        "tide": 0.8
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Penhors",
+    "location": "Finistère, Bretagne",
+    "coordinates": [
+      47.982,
+      -4.373
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Débutant",
+    "description": "Penhors est un spot de surf réputé en Finistère, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Offshore - 7km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.3m",
+      "swellDirection": "Sud-Ouest (208°)",
+      "swellPeriod": "9s",
+      "waterTemp": "12°C",
+      "airTemp": "22°C",
+      "rating": 4
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.1,
+        "wind": 14,
+        "tide": 1.4
+      },
+      {
+        "hour": "09h",
+        "swell": 2.6,
+        "wind": 13,
+        "tide": 0.9
+      },
+      {
+        "hour": "12h",
+        "swell": 2.4,
+        "wind": 18,
+        "tide": 1.0
+      },
+      {
+        "hour": "15h",
+        "swell": 2.2,
+        "wind": 17,
+        "tide": 1.8
+      },
+      {
+        "hour": "18h",
+        "swell": 2.3,
+        "wind": 20,
+        "tide": 0.8
+      },
+      {
+        "hour": "21h",
+        "swell": 1.5,
+        "wind": 8,
+        "tide": 0.6
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 3.4,
+        "wind": 8,
+        "tide": 1.7
+      },
+      {
+        "day": "Mardi",
+        "swell": 2.0,
+        "wind": 17,
+        "tide": 2.3
+      },
+      {
+        "day": "Mercredi",
+        "swell": 3.3,
+        "wind": 5,
+        "tide": 2.3
+      },
+      {
+        "day": "Jeudi",
+        "swell": 2.2,
+        "wind": 13,
+        "tide": 1.6
+      },
+      {
+        "day": "Vendredi",
+        "swell": 2.7,
+        "wind": 10,
+        "tide": 1.2
+      },
+      {
+        "day": "Samedi",
+        "swell": 1.6,
+        "wind": 11,
+        "tide": 1.8
+      },
+      {
+        "day": "Dimanche",
+        "swell": 3.3,
+        "wind": 11,
+        "tide": 1.9
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Les Sables Blancs",
+    "location": "Finistère, Bretagne",
+    "coordinates": [
+      47.825,
+      -3.521
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Débutant",
+    "description": "Les Sables Blancs est un spot de surf réputé en Finistère, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Offshore - 8km/h",
+      "tide": "Descendante",
+      "swellHeight": "2.1m",
+      "swellDirection": "Ouest (290°)",
+      "swellPeriod": "14s",
+      "waterTemp": "16°C",
+      "airTemp": "21°C",
+      "rating": 4
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.6,
+        "wind": 14,
+        "tide": 1.7
+      },
+      {
+        "hour": "09h",
+        "swell": 2.1,
+        "wind": 7,
+        "tide": 1.0
+      },
+      {
+        "hour": "12h",
+        "swell": 1.1,
+        "wind": 7,
+        "tide": 0.9
+      },
+      {
+        "hour": "15h",
+        "swell": 2.6,
+        "wind": 11,
+        "tide": 1.9
+      },
+      {
+        "hour": "18h",
+        "swell": 2.9,
+        "wind": 7,
+        "tide": 0.9
+      },
+      {
+        "hour": "21h",
+        "swell": 1.1,
+        "wind": 20,
+        "tide": 0.7
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 2.5,
+        "wind": 7,
+        "tide": 1.1
+      },
+      {
+        "day": "Mardi",
+        "swell": 1.9,
+        "wind": 15,
+        "tide": 2.2
+      },
+      {
+        "day": "Mercredi",
+        "swell": 2.2,
+        "wind": 13,
+        "tide": 0.9
+      },
+      {
+        "day": "Jeudi",
+        "swell": 3.3,
+        "wind": 13,
+        "tide": 0.7
+      },
+      {
+        "day": "Vendredi",
+        "swell": 1.9,
+        "wind": 18,
+        "tide": 2.2
+      },
+      {
+        "day": "Samedi",
+        "swell": 2.4,
+        "wind": 9,
+        "tide": 0.9
+      },
+      {
+        "day": "Dimanche",
+        "swell": 1.2,
+        "wind": 13,
+        "tide": 2.3
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Le Minou",
+    "location": "Finistère, Bretagne",
+    "coordinates": [
+      48.363,
+      -4.636
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Avancé",
+    "description": "Le Minou est un spot de surf réputé en Finistère, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Onshore - 5km/h",
+      "tide": "Descendante",
+      "swellHeight": "1.9m",
+      "swellDirection": "Sud-Ouest (232°)",
+      "swellPeriod": "15s",
+      "waterTemp": "15°C",
+      "airTemp": "13°C",
+      "rating": 4
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.0,
+        "wind": 15,
+        "tide": 1.8
+      },
+      {
+        "hour": "09h",
+        "swell": 2.6,
+        "wind": 9,
+        "tide": 2.0
+      },
+      {
+        "hour": "12h",
+        "swell": 1.6,
+        "wind": 5,
+        "tide": 1.9
+      },
+      {
+        "hour": "15h",
+        "swell": 1.8,
+        "wind": 10,
+        "tide": 1.4
+      },
+      {
+        "hour": "18h",
+        "swell": 1.7,
+        "wind": 11,
+        "tide": 1.9
+      },
+      {
+        "hour": "21h",
+        "swell": 2.7,
+        "wind": 13,
+        "tide": 1.6
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 1.9,
+        "wind": 16,
+        "tide": 2.5
+      },
+      {
+        "day": "Mardi",
+        "swell": 3.1,
+        "wind": 17,
+        "tide": 2.4
+      },
+      {
+        "day": "Mercredi",
+        "swell": 1.2,
+        "wind": 14,
+        "tide": 2.1
+      },
+      {
+        "day": "Jeudi",
+        "swell": 2.2,
+        "wind": 8,
+        "tide": 1.8
+      },
+      {
+        "day": "Vendredi",
+        "swell": 1.5,
+        "wind": 20,
+        "tide": 1.3
+      },
+      {
+        "day": "Samedi",
+        "swell": 1.9,
+        "wind": 12,
+        "tide": 1.9
+      },
+      {
+        "day": "Dimanche",
+        "swell": 2.2,
+        "wind": 5,
+        "tide": 1.4
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Kersidan",
+    "location": "Finistère, Bretagne",
+    "coordinates": [
+      47.835,
+      -3.894
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Débutant",
+    "description": "Kersidan est un spot de surf réputé en Finistère, Bretagne, offrant de belles vagues pour tous niveaux.",
+    "stats": {
+      "wind": "Offshore - 17km/h",
+      "tide": "Montante",
+      "swellHeight": "3.4m",
+      "swellDirection": "Nord-Ouest (265°)",
+      "swellPeriod": "13s",
+      "waterTemp": "11°C",
+      "airTemp": "15°C",
+      "rating": 5
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.7,
+        "wind": 12,
+        "tide": 1.8
+      },
+      {
+        "hour": "09h",
+        "swell": 1.1,
+        "wind": 13,
+        "tide": 0.8
+      },
+      {
+        "hour": "12h",
+        "swell": 2.7,
+        "wind": 14,
+        "tide": 1.6
+      },
+      {
+        "hour": "15h",
+        "swell": 2.1,
+        "wind": 5,
+        "tide": 0.9
+      },
+      {
+        "hour": "18h",
+        "swell": 1.8,
+        "wind": 8,
+        "tide": 1.2
+      },
+      {
+        "hour": "21h",
+        "swell": 2.7,
+        "wind": 19,
+        "tide": 0.8
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Lundi",
+        "swell": 1.5,
+        "wind": 17,
+        "tide": 1.2
+      },
+      {
+        "day": "Mardi",
+        "swell": 2.1,
+        "wind": 12,
+        "tide": 0.5
+      },
+      {
+        "day": "Mercredi",
+        "swell": 1.5,
+        "wind": 10,
+        "tide": 1.6
+      },
+      {
+        "day": "Jeudi",
+        "swell": 1.1,
+        "wind": 18,
+        "tide": 1.2
+      },
+      {
+        "day": "Vendredi",
+        "swell": 3.5,
+        "wind": 6,
+        "tide": 1.1
+      },
+      {
+        "day": "Samedi",
+        "swell": 1.1,
+        "wind": 11,
+        "tide": 1.1
+      },
+      {
+        "day": "Dimanche",
+        "swell": 1.9,
+        "wind": 15,
+        "tide": 1.3
+      }
+    ]
+  }
+]
