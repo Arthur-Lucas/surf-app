@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Heart } from "lucide-react";
-import spotsData from "../datas/spots.json";
+import spotsData from "@/public/datas/spots.json";
 
 interface Spot {
   id: string;

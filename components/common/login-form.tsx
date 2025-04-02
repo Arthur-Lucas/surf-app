@@ -8,12 +8,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { ROUTES } from "@/utils/constants/ROUTES";
+import { useRouter } from "next/navigation";
 
 export function LoginForm({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   const [errorMessage, setErrorMessage] = useState("");
+  const router = useRouter();
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -36,8 +38,7 @@ export function LoginForm({
         throw new Error("Invalid email or password");
       }
 
-      const data = await response.json();
-      console.log("User signed in:", data);
+      router.push("/spotList");
     } catch (error) {
       console.error("Error signing in:", error);
       setErrorMessage("Invalid email or password. Please try again.");

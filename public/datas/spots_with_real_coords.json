@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "1",
+    "name": "Teahupo'o",
+    "location": "Tahiti, Polynésie française",
+    "coordinates": [
+      -17.8333,
+      -149.2667
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Débutant",
+    "description": "Teahupo'o est un spot de surf situé à Tahiti, Polynésie française, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 20km/h",
+      "tide": "Descendante",
+      "swellHeight": "1.1m",
+      "swellDirection": "NE (74°)",
+      "swellPeriod": "16s",
+      "waterTemp": "20°C",
+      "airTemp": "34°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.5,
+        "wind": 13,
+        "tide": 0.7
+      },
+      {
+        "hour": "09h",
+        "swell": 1.4,
+        "wind": 15,
+        "tide": 2.0
+      },
+      {
+        "hour": "12h",
+        "swell": 3.1,
+        "wind": 11,
+        "tide": 1.2
+      },
+      {
+        "hour": "15h",
+        "swell": 2.1,
+        "wind": 16,
+        "tide": 0.7
+      },
+      {
+        "hour": "18h",
+        "swell": 2.9,
+        "wind": 10,
+        "tide": 0.8
+      },
+      {
+        "hour": "21h",
+        "swell": 2.6,
+        "wind": 8,
+        "tide": 0.8
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 1.2,
+        "wind": 16,
+        "tide": 2.5
+      },
+      {
+        "day": "Thursday",
+        "swell": 1.1,
+        "wind": 6,
+        "tide": 2.5
+      },
+      {
+        "day": "Friday",
+        "swell": 2.7,
+        "wind": 14,
+        "tide": 1.0
+      },
+      {
+        "day": "Saturday",
+        "swell": 3.2,
+        "wind": 11,
+        "tide": 1.4
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.2,
+        "wind": 18,
+        "tide": 2.5
+      },
+      {
+        "day": "Monday",
+        "swell": 1.6,
+        "wind": 16,
+        "tide": 1.8
+      },
+      {
+        "day": "Tuesday",
+        "swell": 2.0,
+        "wind": 13,
+        "tide": 2.4
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Pipeline",
+    "location": "Oahu, Hawaii",
+    "coordinates": [
+      21.6644,
+      -158.05
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Avancé",
+    "description": "Pipeline est un spot de surf situé à Oahu, Hawaii, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 22km/h",
+      "tide": "Montante",
+      "swellHeight": "1.2m",
+      "swellDirection": "S (126°)",
+      "swellPeriod": "10s",
+      "waterTemp": "19°C",
+      "airTemp": "26°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.5,
+        "wind": 15,
+        "tide": 0.7
+      },
+      {
+        "hour": "09h",
+        "swell": 1.5,
+        "wind": 13,
+        "tide": 1.8
+      },
+      {
+        "hour": "12h",
+        "swell": 2.4,
+        "wind": 8,
+        "tide": 1.4
+      },
+      {
+        "hour": "15h",
+        "swell": 2.3,
+        "wind": 7,
+        "tide": 1.8
+      },
+      {
+        "hour": "18h",
+        "swell": 2.5,
+        "wind": 10,
+        "tide": 2.2
+      },
+      {
+        "hour": "21h",
+        "swell": 1.8,
+        "wind": 20,
+        "tide": 1.9
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 3.2,
+        "wind": 8,
+        "tide": 2.5
+      },
+      {
+        "day": "Thursday",
+        "swell": 3.4,
+        "wind": 12,
+        "tide": 1.2
+      },
+      {
+        "day": "Friday",
+        "swell": 1.1,
+        "wind": 19,
+        "tide": 1.6
+      },
+      {
+        "day": "Saturday",
+        "swell": 3.2,
+        "wind": 13,
+        "tide": 2.0
+      },
+      {
+        "day": "Sunday",
+        "swell": 1.0,
+        "wind": 17,
+        "tide": 1.1
+      },
+      {
+        "day": "Monday",
+        "swell": 2.2,
+        "wind": 6,
+        "tide": 0.5
+      },
+      {
+        "day": "Tuesday",
+        "swell": 3.2,
+        "wind": 17,
+        "tide": 1.2
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Jeffreys Bay",
+    "location": "Afrique du Sud",
+    "coordinates": [
+      -34.05,
+      24.9167
+    ],
+    "waveType": "Point break",
+    "difficulty": "Avancé",
+    "description": "Jeffreys Bay est un spot de surf situé à Afrique du Sud, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Offshore - 21km/h",
+      "tide": "Montante",
+      "swellHeight": "1.1m",
+      "swellDirection": "NE (3°)",
+      "swellPeriod": "13s",
+      "waterTemp": "21°C",
+      "airTemp": "32°C",
+      "rating": 1
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 3.3,
+        "wind": 9,
+        "tide": 1.0
+      },
+      {
+        "hour": "09h",
+        "swell": 2.2,
+        "wind": 18,
+        "tide": 1.0
+      },
+      {
+        "hour": "12h",
+        "swell": 1.8,
+        "wind": 8,
+        "tide": 1.9
+      },
+      {
+        "hour": "15h",
+        "swell": 2.0,
+        "wind": 12,
+        "tide": 2.2
+      },
+      {
+        "hour": "18h",
+        "swell": 3.2,
+        "wind": 8,
+        "tide": 0.7
+      },
+      {
+        "hour": "21h",
+        "swell": 2.1,
+        "wind": 7,
+        "tide": 2.0
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 3.2,
+        "wind": 8,
+        "tide": 1.2
+      },
+      {
+        "day": "Thursday",
+        "swell": 1.9,
+        "wind": 12,
+        "tide": 2.0
+      },
+      {
+        "day": "Friday",
+        "swell": 1.6,
+        "wind": 14,
+        "tide": 1.6
+      },
+      {
+        "day": "Saturday",
+        "swell": 3.2,
+        "wind": 18,
+        "tide": 0.8
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.2,
+        "wind": 7,
+        "tide": 0.8
+      },
+      {
+        "day": "Monday",
+        "swell": 1.7,
+        "wind": 8,
+        "tide": 1.6
+      },
+      {
+        "day": "Tuesday",
+        "swell": 2.8,
+        "wind": 14,
+        "tide": 2.1
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Snapper Rocks",
+    "location": "Australie",
+    "coordinates": [
+      -28.084,
+      153.5466
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Débutant",
+    "description": "Snapper Rocks est un spot de surf situé à Australie, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 19km/h",
+      "tide": "Descendante",
+      "swellHeight": "2.2m",
+      "swellDirection": "SW (206°)",
+      "swellPeriod": "12s",
+      "waterTemp": "21°C",
+      "airTemp": "33°C",
+      "rating": 2
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.9,
+        "wind": 10,
+        "tide": 2.4
+      },
+      {
+        "hour": "09h",
+        "swell": 2.1,
+        "wind": 9,
+        "tide": 1.4
+      },
+      {
+        "hour": "12h",
+        "swell": 1.4,
+        "wind": 19,
+        "tide": 1.6
+      },
+      {
+        "hour": "15h",
+        "swell": 3.4,
+        "wind": 17,
+        "tide": 0.5
+      },
+      {
+        "hour": "18h",
+        "swell": 2.4,
+        "wind": 11,
+        "tide": 1.6
+      },
+      {
+        "hour": "21h",
+        "swell": 1.6,
+        "wind": 5,
+        "tide": 2.5
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 1.3,
+        "wind": 12,
+        "tide": 1.9
+      },
+      {
+        "day": "Thursday",
+        "swell": 3.3,
+        "wind": 6,
+        "tide": 1.2
+      },
+      {
+        "day": "Friday",
+        "swell": 2.8,
+        "wind": 9,
+        "tide": 1.6
+      },
+      {
+        "day": "Saturday",
+        "swell": 1.1,
+        "wind": 16,
+        "tide": 2.3
+      },
+      {
+        "day": "Sunday",
+        "swell": 1.5,
+        "wind": 20,
+        "tide": 1.6
+      },
+      {
+        "day": "Monday",
+        "swell": 1.3,
+        "wind": 13,
+        "tide": 1.6
+      },
+      {
+        "day": "Tuesday",
+        "swell": 3.4,
+        "wind": 10,
+        "tide": 1.1
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Mundaka",
+    "location": "Espagne",
+    "coordinates": [
+      43.4035,
+      -2.7016
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Débutant",
+    "description": "Mundaka est un spot de surf situé à Espagne, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 22km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.9m",
+      "swellDirection": "S (310°)",
+      "swellPeriod": "16s",
+      "waterTemp": "22°C",
+      "airTemp": "35°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.0,
+        "wind": 12,
+        "tide": 1.2
+      },
+      {
+        "hour": "09h",
+        "swell": 3.1,
+        "wind": 11,
+        "tide": 1.8
+      },
+      {
+        "hour": "12h",
+        "swell": 2.4,
+        "wind": 13,
+        "tide": 0.8
+      },
+      {
+        "hour": "15h",
+        "swell": 1.6,
+        "wind": 9,
+        "tide": 1.3
+      },
+      {
+        "hour": "18h",
+        "swell": 1.0,
+        "wind": 12,
+        "tide": 2.2
+      },
+      {
+        "hour": "21h",
+        "swell": 2.5,
+        "wind": 6,
+        "tide": 0.6
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 2.4,
+        "wind": 7,
+        "tide": 0.5
+      },
+      {
+        "day": "Thursday",
+        "swell": 2.9,
+        "wind": 16,
+        "tide": 2.1
+      },
+      {
+        "day": "Friday",
+        "swell": 2.1,
+        "wind": 6,
+        "tide": 1.4
+      },
+      {
+        "day": "Saturday",
+        "swell": 1.5,
+        "wind": 20,
+        "tide": 1.5
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.5,
+        "wind": 9,
+        "tide": 1.5
+      },
+      {
+        "day": "Monday",
+        "swell": 1.5,
+        "wind": 14,
+        "tide": 1.1
+      },
+      {
+        "day": "Tuesday",
+        "swell": 2.3,
+        "wind": 9,
+        "tide": 1.0
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Uluwatu",
+    "location": "Bali, Indonésie",
+    "coordinates": [
+      -8.8296,
+      115.0873
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Débutant",
+    "description": "Uluwatu est un spot de surf situé à Bali, Indonésie, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 13km/h",
+      "tide": "Descendante",
+      "swellHeight": "2.3m",
+      "swellDirection": "N (208°)",
+      "swellPeriod": "10s",
+      "waterTemp": "28°C",
+      "airTemp": "21°C",
+      "rating": 2
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 2.4,
+        "wind": 5,
+        "tide": 1.2
+      },
+      {
+        "hour": "09h",
+        "swell": 3.4,
+        "wind": 9,
+        "tide": 1.7
+      },
+      {
+        "hour": "12h",
+        "swell": 1.1,
+        "wind": 17,
+        "tide": 0.5
+      },
+      {
+        "hour": "15h",
+        "swell": 1.4,
+        "wind": 10,
+        "tide": 0.7
+      },
+      {
+        "hour": "18h",
+        "swell": 2.4,
+        "wind": 16,
+        "tide": 2.3
+      },
+      {
+        "hour": "21h",
+        "swell": 1.2,
+        "wind": 9,
+        "tide": 0.7
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 2.0,
+        "wind": 18,
+        "tide": 1.9
+      },
+      {
+        "day": "Thursday",
+        "swell": 3.0,
+        "wind": 11,
+        "tide": 2.1
+      },
+      {
+        "day": "Friday",
+        "swell": 1.4,
+        "wind": 11,
+        "tide": 1.5
+      },
+      {
+        "day": "Saturday",
+        "swell": 1.5,
+        "wind": 12,
+        "tide": 0.8
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.2,
+        "wind": 7,
+        "tide": 1.0
+      },
+      {
+        "day": "Monday",
+        "swell": 1.2,
+        "wind": 18,
+        "tide": 0.8
+      },
+      {
+        "day": "Tuesday",
+        "swell": 2.5,
+        "wind": 7,
+        "tide": 2.2
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Cloudbreak",
+    "location": "Fidji",
+    "coordinates": [
+      -17.8785,
+      177.1914
+    ],
+    "waveType": "Beach break",
+    "difficulty": "Avancé",
+    "description": "Cloudbreak est un spot de surf situé à Fidji, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 8km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.1m",
+      "swellDirection": "S (357°)",
+      "swellPeriod": "13s",
+      "waterTemp": "28°C",
+      "airTemp": "23°C",
+      "rating": 1
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.1,
+        "wind": 5,
+        "tide": 1.4
+      },
+      {
+        "hour": "09h",
+        "swell": 1.8,
+        "wind": 7,
+        "tide": 2.0
+      },
+      {
+        "hour": "12h",
+        "swell": 1.5,
+        "wind": 10,
+        "tide": 2.1
+      },
+      {
+        "hour": "15h",
+        "swell": 1.3,
+        "wind": 19,
+        "tide": 1.6
+      },
+      {
+        "hour": "18h",
+        "swell": 1.9,
+        "wind": 8,
+        "tide": 2.0
+      },
+      {
+        "hour": "21h",
+        "swell": 2.7,
+        "wind": 6,
+        "tide": 0.9
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 1.3,
+        "wind": 12,
+        "tide": 2.1
+      },
+      {
+        "day": "Thursday",
+        "swell": 3.3,
+        "wind": 7,
+        "tide": 2.5
+      },
+      {
+        "day": "Friday",
+        "swell": 3.0,
+        "wind": 5,
+        "tide": 1.1
+      },
+      {
+        "day": "Saturday",
+        "swell": 2.5,
+        "wind": 16,
+        "tide": 0.5
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.8,
+        "wind": 20,
+        "tide": 2.1
+      },
+      {
+        "day": "Monday",
+        "swell": 1.6,
+        "wind": 13,
+        "tide": 1.7
+      },
+      {
+        "day": "Tuesday",
+        "swell": 3.0,
+        "wind": 18,
+        "tide": 1.2
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Zicatela",
+    "location": "Mexique",
+    "coordinates": [
+      15.85,
+      -97.0667
+    ],
+    "waveType": "Point break",
+    "difficulty": "Intermédiaire",
+    "description": "Zicatela est un spot de surf situé à Mexique, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Onshore - 17km/h",
+      "tide": "Montante",
+      "swellHeight": "3.8m",
+      "swellDirection": "SW (322°)",
+      "swellPeriod": "17s",
+      "waterTemp": "24°C",
+      "airTemp": "31°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.1,
+        "wind": 15,
+        "tide": 1.7
+      },
+      {
+        "hour": "09h",
+        "swell": 1.3,
+        "wind": 10,
+        "tide": 1.7
+      },
+      {
+        "hour": "12h",
+        "swell": 1.2,
+        "wind": 7,
+        "tide": 0.6
+      },
+      {
+        "hour": "15h",
+        "swell": 1.5,
+        "wind": 5,
+        "tide": 0.7
+      },
+      {
+        "hour": "18h",
+        "swell": 1.0,
+        "wind": 12,
+        "tide": 1.9
+      },
+      {
+        "hour": "21h",
+        "swell": 2.2,
+        "wind": 15,
+        "tide": 1.3
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 3.0,
+        "wind": 13,
+        "tide": 1.3
+      },
+      {
+        "day": "Thursday",
+        "swell": 2.7,
+        "wind": 11,
+        "tide": 1.3
+      },
+      {
+        "day": "Friday",
+        "swell": 2.8,
+        "wind": 16,
+        "tide": 2.1
+      },
+      {
+        "day": "Saturday",
+        "swell": 2.3,
+        "wind": 13,
+        "tide": 1.1
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.0,
+        "wind": 16,
+        "tide": 1.8
+      },
+      {
+        "day": "Monday",
+        "swell": 1.7,
+        "wind": 17,
+        "tide": 2.2
+      },
+      {
+        "day": "Tuesday",
+        "swell": 2.8,
+        "wind": 9,
+        "tide": 1.0
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Bells Beach",
+    "location": "Australie",
+    "coordinates": [
+      -38.37,
+      144.2833
+    ],
+    "waveType": "Reef break",
+    "difficulty": "Avancé",
+    "description": "Bells Beach est un spot de surf situé à Australie, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Offshore - 24km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.7m",
+      "swellDirection": "SW (318°)",
+      "swellPeriod": "14s",
+      "waterTemp": "19°C",
+      "airTemp": "35°C",
+      "rating": 3
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 3.4,
+        "wind": 5,
+        "tide": 1.8
+      },
+      {
+        "hour": "09h",
+        "swell": 2.4,
+        "wind": 14,
+        "tide": 2.1
+      },
+      {
+        "hour": "12h",
+        "swell": 2.9,
+        "wind": 12,
+        "tide": 2.5
+      },
+      {
+        "hour": "15h",
+        "swell": 2.9,
+        "wind": 11,
+        "tide": 1.1
+      },
+      {
+        "hour": "18h",
+        "swell": 3.4,
+        "wind": 7,
+        "tide": 0.9
+      },
+      {
+        "hour": "21h",
+        "swell": 2.2,
+        "wind": 15,
+        "tide": 0.5
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 1.1,
+        "wind": 7,
+        "tide": 2.4
+      },
+      {
+        "day": "Thursday",
+        "swell": 1.1,
+        "wind": 17,
+        "tide": 1.3
+      },
+      {
+        "day": "Friday",
+        "swell": 3.3,
+        "wind": 13,
+        "tide": 1.8
+      },
+      {
+        "day": "Saturday",
+        "swell": 1.3,
+        "wind": 13,
+        "tide": 0.9
+      },
+      {
+        "day": "Sunday",
+        "swell": 1.2,
+        "wind": 14,
+        "tide": 2.1
+      },
+      {
+        "day": "Monday",
+        "swell": 3.5,
+        "wind": 7,
+        "tide": 0.9
+      },
+      {
+        "day": "Tuesday",
+        "swell": 1.4,
+        "wind": 19,
+        "tide": 1.2
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Chicama",
+    "location": "Pérou",
+    "coordinates": [
+      -7.7167,
+      -79.45
+    ],
+    "waveType": "Point break",
+    "difficulty": "Avancé",
+    "description": "Chicama est un spot de surf situé à Pérou, apprécié pour ses vagues.",
+    "stats": {
+      "wind": "Offshore - 20km/h",
+      "tide": "Descendante",
+      "swellHeight": "3.2m",
+      "swellDirection": "NE (189°)",
+      "swellPeriod": "15s",
+      "waterTemp": "19°C",
+      "airTemp": "24°C",
+      "rating": 2
+    },
+    "forecast": [
+      {
+        "hour": "06h",
+        "swell": 1.7,
+        "wind": 20,
+        "tide": 1.3
+      },
+      {
+        "hour": "09h",
+        "swell": 3.0,
+        "wind": 13,
+        "tide": 2.4
+      },
+      {
+        "hour": "12h",
+        "swell": 2.7,
+        "wind": 11,
+        "tide": 0.6
+      },
+      {
+        "hour": "15h",
+        "swell": 2.9,
+        "wind": 11,
+        "tide": 1.8
+      },
+      {
+        "hour": "18h",
+        "swell": 1.5,
+        "wind": 11,
+        "tide": 1.8
+      },
+      {
+        "hour": "21h",
+        "swell": 2.1,
+        "wind": 9,
+        "tide": 0.9
+      }
+    ],
+    "dailyForecast": [
+      {
+        "day": "Wednesday",
+        "swell": 3.5,
+        "wind": 5,
+        "tide": 1.9
+      },
+      {
+        "day": "Thursday",
+        "swell": 3.4,
+        "wind": 17,
+        "tide": 0.9
+      },
+      {
+        "day": "Friday",
+        "swell": 2.6,
+        "wind": 5,
+        "tide": 1.2
+      },
+      {
+        "day": "Saturday",
+        "swell": 1.9,
+        "wind": 20,
+        "tide": 2.4
+      },
+      {
+        "day": "Sunday",
+        "swell": 2.1,
+        "wind": 15,
+        "tide": 2.4
+      },
+      {
+        "day": "Monday",
+        "swell": 3.4,
+        "wind": 9,
+        "tide": 0.9
+      },
+      {
+        "day": "Tuesday",
+        "swell": 2.0,
+        "wind": 10,
+        "tide": 1.1
+      }
+    ]
+  }
+]

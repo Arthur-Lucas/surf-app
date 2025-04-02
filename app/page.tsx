@@ -24,33 +24,13 @@ export default function Home() {
         console.error("Error fetching session:", error);
       });
   }, []);
-
-  function handleSignOut() {
-    fetch("/api/auth/signout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          setUser(null);
-          console.log("Successfully signed out");
-
-        } else {
-        }
-      })
-      .catch(() => {});
-  }
   return (
     <div className="flex flex-col min-h-screen bg-white text-black">
       <nav className="w-full bg-white border-b border-gray-200 p-4 flex justify-between items-center fixed top-0 z-50">
         <h1 className="text-2xl font-bold">SurfSpots</h1>
         <div className="flex gap-4">
           {user ? (
-            <Button className="hover:cursor-pointer" variant="default" onClick={handleSignOut}>
-              Logout
-            </Button>
+            <></>
           ) : (
             <>
               <Link className="hover:cursor-pointer" href="/login">
@@ -74,9 +54,12 @@ export default function Home() {
         />
 
         <div className="my-24">
-          <h1 className="text-3xl font-bold">Découvrez les meilleurs spots de surf près de chez vous</h1>
+          <h1 className="text-3xl font-bold">
+            Découvrez les meilleurs spots de surf près de chez vous
+          </h1>
           <p className="text-lg text-gray-600 max-w-lg m-auto mt-8">
-            Connectez-vous pour accéder aux prévisions, avis et recommandations des surfeurs locaux.
+            Connectez-vous pour accéder aux prévisions, avis et recommandations
+            des surfeurs locaux.
           </p>
         </div>
 
@@ -88,7 +71,9 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-white via-white/30 to-transparent" />
             <div className="relative z-10 text-left">
-              <h2 className="text-xl font-semibold">Prévisions en temps réel</h2>
+              <h2 className="text-xl font-semibold">
+                Prévisions en temps réel
+              </h2>
               <p className="text-gray-700 mt-2 max-w-sm">
                 Accédez aux conditions météorologiques et aux vagues en un clic.
               </p>
