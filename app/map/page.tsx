@@ -4,22 +4,36 @@ import "leaflet/dist/leaflet.css";
 import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import spots from "../datas/spots_with_real_coords.json";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import dynamic from "next/dynamic";
 
-let L: typeof import("leaflet");
-useEffect(() => {
-  if (typeof window !== "undefined") {
-    import("leaflet").then((L) => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      delete (L.Icon.Default.prototype as any)._getIconUrl;
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: "/leaflet/marker-icon-2x.png",
-        iconUrl: "/leaflet/marker-icon.png",
-        shadowUrl: "/leaflet/marker-shadow.png",
-      });
+const MapContainer = dynamic(
+  () => import("react-leaflet").then((m) => m.MapContainer),
+  { ssr: false }
+);
+const TileLayer = dynamic(
+  () => import("react-leaflet").then((m) => m.TileLayer),
+  { ssr: false }
+);
+const Marker = dynamic(() => import("react-leaflet").then((m) => m.Marker), {
+  ssr: false,
+});
+const Popup = dynamic(() => import("react-leaflet").then((m) => m.Popup), {
+  ssr: false,
+});
+
+let L: typeof import("leaflet") | null = null;
+
+if (typeof window !== "undefined") {
+  import("leaflet").then((leaflet) => {
+    L = leaflet;
+    delete (L.Icon.Default.prototype as any)._getIconUrl;
+    L.Icon.Default.mergeOptions({
+      iconRetinaUrl: "/leaflet/marker-icon-2x.png",
+      iconUrl: "/leaflet/marker-icon.png",
+      shadowUrl: "/leaflet/marker-shadow.png",
     });
-  }
-}, []);
+  });
+}
 
 interface Spot {
   id: string;
@@ -33,8 +47,6 @@ interface Spot {
 export default function MapPage() {
   const router = useRouter();
   const allSpots = spots as Spot[];
-  const [mapReady, setMapReady] = useState(false);
-
   const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedType, setSelectedType] = useState("");
 
@@ -62,13 +74,6 @@ export default function MapPage() {
     );
     return [latSum / filteredSpots.length, lngSum / filteredSpots.length];
   }, [filteredSpots]);
-
-  useEffect(() => {
-    document.body.style.margin = "0";
-    setMapReady(true);
-  }, []);
-
-  if (!mapReady) return null;
 
   return (
     <div className="h-screen w-screen relative">
