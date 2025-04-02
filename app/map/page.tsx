@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
