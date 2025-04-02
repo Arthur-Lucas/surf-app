@@ -70,6 +70,17 @@ export default function BottomNav() {
           Spots
         </Link>
 
+        <Link
+          href="/adminPanel"
+          className={`transition font-medium text-base ${
+            pathname === "/adminPanel"
+              ? "opacity-100"
+              : "opacity-60 hover:opacity-100"
+          }`}
+        >
+          Panel
+        </Link>
+
         <button
           onClick={handleLogout}
           className="transition font-medium text-base opacity-60 hover:opacity-100"

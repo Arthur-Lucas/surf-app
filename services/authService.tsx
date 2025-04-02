@@ -22,6 +22,7 @@ export const signIn = async (email: string, password: string) => {
       password,
     });
     if (error) throw error;
+    console.log("Sign in data:", data);
     return data;
   } catch (err) {
     throw err;
