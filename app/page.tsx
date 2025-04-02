@@ -105,7 +105,7 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-white via-white/30 to-transparent" />
             <div className="relative z-10 text-left">
-              <h2 className="text-xl font-semibold">Glisseurs d'eau</h2>
+              <h2 className="text-xl font-semibold">Glisseurs d&rsquo;eau</h2>
               <p className="text-gray-700 mt-2 max-w-sm">
                 Rejoignez des passionnés et partagez vos expériences.
               </p>
