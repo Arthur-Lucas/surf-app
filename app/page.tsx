@@ -16,7 +16,7 @@ export default function Home() {
         } else {
         }
       })
-      .catch((error) => {});
+      .catch(() => {});
   }
 
   function handleGetSession() {
@@ -27,7 +27,7 @@ export default function Home() {
       },
     })
       .then((response) => response.json())
-      .then((data) => {})
+      .then(() => {})
       .catch((error) => {
         console.error("Error fetching session:", error);
       });

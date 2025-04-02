@@ -14,11 +14,21 @@ export async function POST(req: Request): Promise<NextResponse> {
     }
 
     return NextResponse.json({ message: "Registration successful", user });
-  } catch (error: any) {
-    const status = error.status || 500;
+  } catch (error: unknown) {
+    // Utilisation du type 'unknown' pour l'erreur
+    if (error instanceof Error) {
+      // Vérification du type d'erreur
+      const status = (error as { status?: number }).status || 500;
+      return NextResponse.json(
+        { error: error.message || "Internal server error" },
+        { status }
+      );
+    }
+
+    // Cas où l'erreur ne serait pas une instance d'Error
     return NextResponse.json(
-      { error: error.message || "Internal server error" },
-      { status }
+      { error: "Internal server error" },
+      { status: 500 }
     );
   }
 }

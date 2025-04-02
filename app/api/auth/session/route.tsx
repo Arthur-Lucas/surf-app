@@ -15,7 +15,7 @@ export async function GET() {
     return NextResponse.json(user);
   } catch (error) {
     return NextResponse.json(
-      { error: "Failed to retrieve user" },
+      { error: "Failed to retrieve user " + error },
       { status: 500 }
     );
   }
