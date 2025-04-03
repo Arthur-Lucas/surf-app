@@ -27,7 +27,7 @@ export function LoginForm({
     const password = (form.elements.namedItem("password") as HTMLInputElement)
       .value;
 
-    setErrorMessage(""); // Réinitialiser l'erreur avant la tentative
+    setErrorMessage("");
 
     try {
       const response = await fetch("/api/auth/login", {
