@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useRefresh } from "@/components/common/UseRefresh";
 
 export default function BottomNav() {
+  const { refresh, triggerRefresh } = useRefresh();
   const pathname = usePathname();
   const router = useRouter();
   const [user, setUser] = useState(null);
@@ -26,7 +28,7 @@ export default function BottomNav() {
       .catch((error) => {
         console.error("Error fetching session:", error);
       });
-  }, []);
+  }, [refresh]);
 
   const handleLogout = () => {
     setUser(null);

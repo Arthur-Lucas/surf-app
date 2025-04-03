@@ -10,10 +10,12 @@ import Link from "next/link";
 import { ROUTES } from "@/utils/constants/ROUTES";
 import { useRouter } from "next/navigation";
 
+import { useRefresh } from "@/components/common/UseRefresh";
 export function LoginForm({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
+  const { triggerRefresh } = useRefresh();
   const [errorMessage, setErrorMessage] = useState("");
   const router = useRouter();
 
@@ -37,7 +39,7 @@ export function LoginForm({
       if (!response.ok) {
         throw new Error("Invalid email or password");
       }
-
+      triggerRefresh();
       router.push("/spotList");
     } catch (error) {
       console.error("Error signing in:", error);
