@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useRefresh } from "@/components/common/UseRefresh";
 
 export default function BottomNav() {
-  const { refresh, triggerRefresh } = useRefresh();
+  const { refresh } = useRefresh();
   const pathname = usePathname();
   const router = useRouter();
   const [user, setUser] = useState(null);
