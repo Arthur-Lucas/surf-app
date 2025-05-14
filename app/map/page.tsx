@@ -1,5 +1,6 @@
-"use client";
+'use client';
 
+<<<<<<< HEAD
 import "leaflet/dist/leaflet.css";
 import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
@@ -25,17 +26,29 @@ let L: typeof import("leaflet") | null = null;
 
 if (typeof window !== "undefined") {
   import("leaflet").then((leaflet) => {
+=======
+import 'leaflet/dist/leaflet.css';
+import { useRouter } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import spots from '../datas/spots_with_real_coords.json';
+
+
+let L: typeof import('leaflet');
+if (typeof window !== 'undefined') {
+  import('leaflet').then((leaflet) => {
+>>>>>>> feat/sponsors
     L = leaflet;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     delete (L.Icon.Default.prototype as any)._getIconUrl;
     L.Icon.Default.mergeOptions({
-      iconRetinaUrl: "/leaflet/marker-icon-2x.png",
-      iconUrl: "/leaflet/marker-icon.png",
-      shadowUrl: "/leaflet/marker-shadow.png",
+      iconRetinaUrl: '/leaflet/marker-icon-2x.png',
+      iconUrl: '/leaflet/marker-icon.png',
+      shadowUrl: '/leaflet/marker-shadow.png',
     });
   });
 }
 
+<<<<<<< HEAD
 export default function MapPage() {
   const router = useRouter();
   const allSpots = spots as Spot[];
@@ -47,12 +60,49 @@ export default function MapPage() {
   );
   const types = Array.from(new Set(allSpots.map((spot) => spot.waveType)));
 
+=======
+interface Spot {
+  id: string;
+  name: string;
+  location: string;
+  coordinates: number[];
+  waveType: string;
+  difficulty: string;
+}
+
+export default function MapPage() {
+  const router = useRouter();
+  const allSpots = (spots as Spot[]);
+  const [mapReady, setMapReady] = useState(false);
+
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [selectedType, setSelectedType] = useState('');
+
+  const countries = Array.from(new Set(allSpots.map((spot) => spot.location.split(',').pop()?.trim())));
+  const types = Array.from(new Set(allSpots.map((spot) => spot.waveType)));
+
+>>>>>>> feat/sponsors
   const filteredSpots = allSpots.filter((spot) => {
     return (
       (!selectedCountry || spot.location.includes(selectedCountry)) &&
       (!selectedType || spot.waveType === selectedType)
     );
   });
+<<<<<<< HEAD
+=======
+
+  const mapCenter = useMemo(() => {
+    if (filteredSpots.length === 0) return [47.8, -3.9];
+    const latSum = filteredSpots.reduce((sum, spot) => sum + spot.coordinates[0], 0);
+    const lngSum = filteredSpots.reduce((sum, spot) => sum + spot.coordinates[1], 0);
+    return [latSum / filteredSpots.length, lngSum / filteredSpots.length];
+  }, [filteredSpots]);
+
+  useEffect(() => {
+    document.body.style.margin = '0';
+    setMapReady(true);
+  }, []);
+>>>>>>> feat/sponsors
 
   const mapCenter = useMemo(() => {
     if (filteredSpots.length === 0) return [47.8, -3.9];
@@ -80,9 +130,13 @@ export default function MapPage() {
           >
             <option value="">Tous</option>
             {countries.map((country) => (
+<<<<<<< HEAD
               <option key={country} value={country}>
                 {country}
               </option>
+=======
+              <option key={country} value={country}>{country}</option>
+>>>>>>> feat/sponsors
             ))}
           </select>
         </div>
@@ -96,9 +150,13 @@ export default function MapPage() {
           >
             <option value="">Tous</option>
             {types.map((type) => (
+<<<<<<< HEAD
               <option key={type} value={type}>
                 {type}
               </option>
+=======
+              <option key={type} value={type}>{type}</option>
+>>>>>>> feat/sponsors
             ))}
           </select>
         </div>
@@ -116,12 +174,16 @@ export default function MapPage() {
         />
 
         {filteredSpots.map((spot) => (
+<<<<<<< HEAD
           <Marker key={spot.id} position={spot.coordinates as [number, number]}>
+=======
+          <Marker
+            key={spot.id}
+            position={spot.coordinates as [number, number]}
+          >
+>>>>>>> feat/sponsors
             <Popup>
-              <div
-                onClick={() => router.push(`/spots/${spot.id}`)}
-                className="cursor-pointer"
-              >
+              <div onClick={() => router.push(`/spots/${spot.id}`)} className="cursor-pointer">
                 <strong>{spot.name}</strong>
                 <br />
                 {spot.location}
